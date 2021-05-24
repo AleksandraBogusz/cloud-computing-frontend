@@ -1,0 +1,11 @@
+.main {
+    width: 960px;
+    background-color: teal;
+}
+
+.preview-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}

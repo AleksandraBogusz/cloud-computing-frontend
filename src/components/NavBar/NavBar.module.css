@@ -1,0 +1,101 @@
+.main {
+    position: sticky;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    font-family: 'Manrope', sans-serif;
+    height: 60px;
+    padding-left: 50px;
+    justify-content: space-between;
+    background-color: #222;
+    border-bottom: 1px solid #000;
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.nav-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    flex-basis: 100px;
+    text-decoration: none;
+}
+
+.nav-element-responsive {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    flex-basis: 100px;
+    text-decoration: none;
+}
+
+.nav-element:hover {
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.nav-element-responsive:hover {
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.nav-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-logo {
+    height: 100%;
+}
+
+.nav-responsive-panel {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+    z-index: 100;
+}
+
+.nav-responsive-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    flex-basis: 100px;
+    text-decoration: none;   
+}
+
+.nav-responsive-element:hover {
+    background-color: #333;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .mav-elements {
+        display: none;
+    }
+
+    .nav-element {
+        display: none;
+    }
+    
+    .nav-element-responsive {
+        display: flex;
+    }
+}

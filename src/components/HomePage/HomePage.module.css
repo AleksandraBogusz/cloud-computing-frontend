@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scrollable {
+    height: 90vh;
+    overflow: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
